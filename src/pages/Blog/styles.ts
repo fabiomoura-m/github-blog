@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const PostsListConainer = styled.section`
+export const PostsListContainer = styled.section`
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
