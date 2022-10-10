@@ -42,10 +42,11 @@ export function Blog() {
     useEffect(() => {
         getPosts();
     }, []);
+
     return (
         <div>
             <Profile />
-            <SearchInput getPosts={getPosts} />
+            <SearchInput getPosts={getPosts} postsLength={posts.length} />
             <PostsListContainer>
                 {posts.map(post => (
                     <Post key={post.number} post={post} />
