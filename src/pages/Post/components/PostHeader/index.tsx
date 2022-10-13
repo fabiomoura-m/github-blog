@@ -22,7 +22,6 @@ export function PostHeader({ postData, isLoading }: PostHeaderProps) {
     function goBack() {
         navigate(-1);
     }
-    console.log(postData);
     const formattedDate = relativeDateFormatter(postData.created_at);
     return (
         <PostHeaderContainer>
